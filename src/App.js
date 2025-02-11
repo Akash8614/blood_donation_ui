@@ -5,13 +5,12 @@ import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 function App() {
   return (
-    <Router>
+    <Router basename="/blood_donation_ui">
       <div className="App">
         <Navbar />
-
         <Routes>
-          <Route path="/donate" element={<DonorRegistrationPage />} />
           <Route path="/" element={<Home />} />
+          <Route path="/donate" element={<DonorRegistrationPage />} />
           <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
       </div>

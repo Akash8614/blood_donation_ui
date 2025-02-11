@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -10,9 +11,9 @@ function Home() {
         <p className="hero-subtitle">
           Your donation can make a difference in someone's life today.
         </p>
-        <a href="/donate" className="hero-button">
+        <Link to="/donate" className="hero-button">
           Become a Donor
-        </a>
+        </Link>
       </header>
 
       <section className="about-section">
@@ -49,9 +50,9 @@ function Home() {
           <li>Book an appointment at your nearest blood donation camp.</li>
           <li>Come prepared, stay hydrated, and donate!</li>
         </ol>
-        <a href="/donate" className="donate-link">
+        <Link to="/donate" className="donate-link">
           Learn More About the Process
-        </a>
+        </Link>
       </section>
 
       <footer className="footer">

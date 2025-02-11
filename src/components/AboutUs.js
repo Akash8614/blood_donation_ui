@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
+import { Link } from "react-router-dom";
 
 function AboutUs() {
   return (
@@ -66,9 +67,9 @@ function AboutUs() {
           achieve our mission. Together, we can make sure that no one has to
           wait for the blood they need. Become a part of our community today.
         </p>
-        <a href="/donate" className="donate-link">
+        <Link to="/donate" className="donate-link">
           Become a Donor
-        </a>
+        </Link>
       </section>
     </div>
   );
